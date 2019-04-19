@@ -1,7 +1,8 @@
-<link rel="stylesheet"  href="css/app.css"/>
-<link rel="stylesheet"  href="css/styleVideos.css"/> 
-<link rel="stylesheet" href="css/rating.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet"  href="css/app.css"/>
+<link rel="stylesheet"  href="css/styleHome.css"/> 
+
+
     
 <html>
 <head>
@@ -9,32 +10,41 @@
 </head>
 @include('inc.navbar')
 <body>
-<input type="file" id="videoFile" style="display:none">
-	
-	<div class="popup-overlay">
-        <!--Creates the popup content-->
-       	<div  class="popup-content">
-          <h2>Uploading video...</h2>
-          <div class="loader"></div>
-        </div>
-	</div>
-	
-    
-    
-    	<br>
-    	<br>
-    	<br>
-    	<h1  style="text-align: center;">ThePostOfToday.com</h1>
-    	<br>
-    	<br>
-    	<p>
-    	This website is about videos. You can upload videos to the trending category about adventures, sports, humor etc...
-    	The website automically generates the top 100 list. Trending videos remain in the server for 2 weeks.
-    	Most voted videos are moved to the top 100 list. I hope you enjoy the videos stored in the website and you upload good ones!
-    	
-    	</p>
-   
 
+	
+    	
+    	
+    	
+		<div class="row">
+		
+			<img src="images\logo3.png" id="logo"></img>
+			
+		</div>
+        	
+		
+    	<div class="container">
+    	<div class="row">
+    		<div class="col-xs-1 col-sm-1 col-lg-1"></div>
+        	<div class="col-xs-5 col-sm-5 col-lg-5">
+        		<h2>Trending</h2>
+            	<p class="trending">
+            	This website is about videos. You can upload videos to the trending category about adventures, sports, humor etc...
+            	The website automically generates the top 100 list. Trending videos remain in the server for 2 weeks and are deleted after this period.
+            	Most voted videos are moved to the top 100 list. I hope you enjoy the videos stored in the website and you upload good ones!
+            	
+            	</p>
+       		</div>
+       		<div class="col-xs-1 col-sm-1 col-lg-1"></div>
+       		<div class="col-xs-5 col-sm-5 col-lg-5">
+        		<h2>Top 100</h2>
+            	<p class="top100">
+            	Here we find the list with the top 100 videos of this webpage.
+            	I hope you endjoy the videos in this section. 
+            	
+            	</p>
+       		</div>
+		</div>
+		</div>
 	
 	
 	 

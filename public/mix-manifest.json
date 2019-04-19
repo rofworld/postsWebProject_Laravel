@@ -3,5 +3,10 @@
     "/css/app.css": "/css/app.css",
     "/css/styleVideos.css": "/css/styleVideos.css",
     "/css/rating.css": "/css/rating.css",
-    "/js/videosController.js": "/js/videosController.js"
+    "/css/registration.css": "/css/registration.css",
+    "/css/styleHome.css": "/css/styleHome.css",
+    "/css/signin.css": "/css/signin.css",
+    "/css/upload.css": "/css/upload.css",
+    "/js/trendingController.js": "/js/trendingController.js",
+    "/js/uploadController.js": "/js/uploadController.js"
 }

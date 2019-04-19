@@ -13,26 +13,6 @@ body {
   margin-left: 5%;
 }
 
-#addButton {
-  width: 20%;
-  height: 50px;
-  font-size: large;
-  margin-left: 6%;
-}
-
-#filePath {
-  width: 60%;
-  height: 50px;
-  resize: none;
-  margin-left: 2%;
-  background-color: white;
-}
-
-#fileUploadButton {
-  width: 5%;
-  height: 50px;
-}
-
 .videoShow {
   width: 400px;
   height: 300px;
@@ -121,5 +101,9 @@ input[type=radio] {
 .table {
   overflow-x: hidden;
   margin-left: 5%;
+}
+
+.pagination {
+  margin-left: 25%;
 }
 

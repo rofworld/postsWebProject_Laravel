@@ -9,15 +9,7 @@
 </head>
 @include('inc.navbar')
 <body>
-<input type="file" id="videoFile" style="display:none">
-	
-	<div class="popup-overlay">
-        <!--Creates the popup content-->
-       	<div  class="popup-content">
-          <h2>Uploading video...</h2>
-          <div class="loader"></div>
-        </div>
-	</div>
+
 	
     	<table class='table'>
     	<thead> 
@@ -67,10 +59,13 @@
 		
         </table>
 
+<div class="pagination">
 	
+	{{ $videos->links() }}
+</div>	
 	
 	 
-<script src="js/videosController.js"></script>	
+<script src="js/trendingController.js"></script>	
 </body>
 
 

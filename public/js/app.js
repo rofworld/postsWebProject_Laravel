@@ -49431,6 +49431,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/registration.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/registration.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/signin.scss":
+/*!************************************!*\
+  !*** ./resources/sass/signin.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/styleHome.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/styleHome.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/styleVideos.scss":
 /*!*****************************************!*\
   !*** ./resources/sass/styleVideos.scss ***!
@@ -49442,17 +49475,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/upload.scss":
+/*!************************************!*\
+  !*** ./resources/sass/upload.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!****************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/styleVideos.scss ./resources/sass/rating.scss ***!
-  \****************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/styleVideos.scss ./resources/sass/rating.scss ./resources/sass/registration.scss ./resources/sass/styleHome.scss ./resources/sass/signin.scss ./resources/sass/upload.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\styleVideos.scss */"./resources/sass/styleVideos.scss");
-module.exports = __webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\rating.scss */"./resources/sass/rating.scss");
+__webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\rating.scss */"./resources/sass/rating.scss");
+__webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\registration.scss */"./resources/sass/registration.scss");
+__webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\styleHome.scss */"./resources/sass/styleHome.scss");
+__webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\signin.scss */"./resources/sass/signin.scss");
+module.exports = __webpack_require__(/*! C:\Users\Samsung\eclipse-workspace-oxygen\postsWebProject_laravel\resources\sass\upload.scss */"./resources/sass/upload.scss");
 
 
 /***/ })

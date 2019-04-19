@@ -12,7 +12,12 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/videosController.js', 'public/js')
+    .js('resources/js/trendingController.js', 'public/js')
+    .js('resources/js/uploadController.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .sass('resources/sass/styleVideos.scss', 'public/css')
-   .sass('resources/sass/rating.scss', 'public/css');
+   .sass('resources/sass/rating.scss', 'public/css')
+   .sass('resources/sass/registration.scss', 'public/css')
+   .sass('resources/sass/styleHome.scss', 'public/css')
+   .sass('resources/sass/signin.scss', 'public/css')
+   .sass('resources/sass/upload.scss', 'public/css');
