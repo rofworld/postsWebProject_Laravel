@@ -9,13 +9,13 @@
 			if ($("#videoFile")[0].files.length>0){
     			var fileName = $("#videoFile")[0].files[0].name;
     			console.log(fileName);
-			  	$("#filePath").val(fileName);
+			  	$("#filePath").text(fileName);
 			}else{
-				$("#filePath").val("");
+				$("#filePath").text("");
 			}
 		});
 	
-		$("#addButton").click(function() {
+		/*$("#addButton").click(function() {
 			if ($("#videoFile")[0].files.length>0){
 				var fileName = $("#videoFile")[0].files[0].name;
 				console.log("fileName = " + $("#videoFile")[0].files[0].name + ". File Size = " + $("#videoFile")[0].files[0].size);
@@ -100,3 +100,50 @@
             }
 		});
   	
+        */
+
+(function() {
+ 
+    var bar = $('.bar');
+    var percent = $('.percent');
+    //var status = $('#status');
+ 
+    $('form').ajaxForm({
+       
+        beforeSend: function() {
+            //status.empty();
+            var percentVal = '0%';
+            var posterValue = $('input[name=file]').fieldValue();
+            bar.width(percentVal)
+            percent.html(percentVal);
+        },
+        uploadProgress: function(event, position, total, percentComplete) {
+            var percentVal = percentComplete + '%';
+            bar.width(percentVal)
+            percent.html(percentVal);
+        },
+        success: function() {
+            var percentVal = 'Wait, Saving';
+            bar.width(percentVal)
+            percent.html(percentVal);
+        },
+        complete: function(xhr) {
+            var percentVal = 'Completed';
+            bar.width(percentVal)
+            percent.html(percentVal);
+           
+            $('#validation-errors').html('');
+            $('#status').html('');
+            if (xhr.responseJSON.status){
+                console.log('<div class="alert alert-success">'+xhr.responseJSON.status+'</div>');
+                $('#status').append('<div class="alert alert-success">'+xhr.responseJSON.status+'</div>');
+            }
+            
+            $.each(xhr.responseJSON.errors, function(key,value) {
+                console.log('<div class="alert alert-danger">'+value+'</div>');
+                $('#validation-errors').append('<div class="alert alert-danger">'+value+'</div>');
+            }); 
+        }
+    });
+     
+    })();

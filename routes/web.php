@@ -109,7 +109,11 @@ Route::get('/signout', function () {
 
 
 Route::get('/home', function () {
-    return view('home');
+    if (Auth::check()){
+        return view('home');
+    }else{
+        return view('signin');
+    }
 });
 
 Route::get('/upload', function () {
@@ -127,6 +131,10 @@ Route::get('/trending','VideosController@getVideos');
 Route::post('/insertVideoRate','VideosController@insertVideoRate');
 
 Route::post('/insertVideo','VideosController@insertVideo');
+
+Route::any('/searchTrending','VideosController@searchTrending');
+
+Route::any('/searchTop','VideosController@searchTop');
 
 
         
